@@ -1,13 +1,17 @@
-## 部署文档
+## RTL-SDR DEVEL
 
 Use gqrx with an SDR device (such as the USB device shown in the image below) to send audio data to the loopback address. Then, use gqrx_recv.py to receive and assemble the audio into WAV format, which is then sent to the whisper_server.py service for speech recognition. Have fun experimenting!
 
-```bash
+<img src="screenshot.jpg" title="USB SDR" width="50%">
+
+```zsh
 ➜  rtlsdr_radio2_whisper git:(master) ✗ python gqrx_recv.py
 Serving on 127.0.0.1:7355...
 {'text': ' Thank you.'}
 ^CReceived KeyboardInterrupt, exiting...
 ```
+
+<img src="sdr.jpg" title="USB SDR" width="50%">
 
 ```bash
 # Whisper Server
