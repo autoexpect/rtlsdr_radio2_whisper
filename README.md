@@ -14,7 +14,7 @@ Serving on 127.0.0.1:7355...
 <img src="sdr.jpg" title="USB SDR" width="50%">
 
 ```bash
-# whisper Server
+# whisper server
 conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 pip install --upgrade pip accelerate fastapi uvicorn pyqt5 pyqtwebengine python-multipart
 pip install --upgrade git+https://github.com/huggingface/transformers.git accelerate "datasets[audio]"
